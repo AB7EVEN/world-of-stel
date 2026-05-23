@@ -1,111 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STEL WHIP</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STEL | Whipped Collagen Cream</title>
+  <meta name="description" content="STEL is a low calorie whipped collagen cream made for coffee, matcha, fruit, yogurt bowls and desserts. First drop coming soon." />
+  <meta property="og:title" content="STEL | Whipped Collagen Cream" />
+  <meta property="og:description" content="Low calorie. No added sugar. Made for your fridge." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f8f3ea" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="nav">
-    <div class="nav-left">
-      <a href="#"><img src="assets/stel-logo.jpg" alt="STEL logo" class="logo"></a>
-    </div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#ingredients">Ingredients</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <div class="nav-cta">
-      <a href="#waitlist" class="btn btn-primary">Join the waitlist</a>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="assets/stel-logo.jpg" alt="STEL logo" class="hero-logo">
-    <p class="hero-subtitle">Elevate coffee, matcha, fruit, yogurt bowls + desserts.</p>
-    <p class="hero-tagline">Low calorie · No added sugar · With collagen · Fridge staple</p>
-    <a href="#waitlist" class="hero-btn btn btn-primary">Join the waitlist</a>
-  </section>
-
-  <!-- Benefits -->
-  <section class="benefits" id="benefits">
-    <div class="benefit-item">
-      <h3>Low calorie</h3>
-      <p>light &amp; indulgent</p>
-    </div>
-    <div class="benefit-item">
-      <h3>No added sugar</h3>
-      <p>naturally sweetened</p>
-    </div>
-    <div class="benefit-item">
-      <h3>With collagen</h3>
-      <p>10&nbsp;g per serving</p>
-    </div>
-    <div class="benefit-item">
-      <h3>Fridge staple</h3>
-      <p>always on hand</p>
-    </div>
-  </section>
-
-  <!-- How to Use -->
-  <section class="how-to-use" id="how-to-use">
-    <h2>How to use</h2>
-    <div class="use-grid">
-      <div class="use-item">
-        <div class="use-image use-matcha"></div>
-        <h3>Matcha</h3>
-        <p>creamier matcha moments</p>
-      </div>
-      <div class="use-item">
-        <div class="use-image use-fruit"></div>
-        <h3>Fruit</h3>
-        <p>a whipped upgrade</p>
-      </div>
-      <div class="use-item">
-        <div class="use-image use-yogurt"></div>
-        <h3>Yogurt bowls</h3>
-        <p>more indulgence, more protein</p>
-      </div>
-      <div class="use-item">
-        <div class="use-image use-hot-chocolate"></div>
-        <h3>Hot chocolate</h3>
-        <p>the ultimate cozy ritual</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Waitlist / Signup -->
-  <section class="waitlist-section" id="waitlist">
-    <h2>Your new fridge favorite</h2>
-    <p>STEL&nbsp;WHIP is your everyday indulgence&nbsp;— made with collagen, made to elevate.</p>
-    <form name="waitlist" method="POST" netlify netlify-honeypot="bot-field" action="/success">
-      <input type="hidden" name="bot-field">
-      <input type="email" name="email" placeholder="Your email" required>
-      <button type="submit" class="btn btn-primary">Join the waitlist</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <nav class="footer-nav">
+  <div class="page">
+    <header class="site-header">
+      <a class="brand-mark" href="#top" aria-label="STEL home">
+        <img src="assets/stel-logo-transparent.png" alt="STEL" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#ingredients">Ingredients</a>
         <a href="#faq">FAQ</a>
       </nav>
+      <a class="nav-button" href="#waitlist">Join the waitlist</a>
+    </header>
+
+    <main id="top">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">First drop coming soon</p>
+          <h1 id="hero-title">
+            <span class="sr-only">STEL</span>
+            <img src="assets/stel-logo-transparent.png" alt="" aria-hidden="true" class="hero-logo" />
+          </h1>
+          <p class="hero-line">Elevate coffee, matcha, fruit, yogurt bowls + desserts.</p>
+          <p class="hero-subline">Low calorie. No added sugar. With collagen. Made for your fridge.</p>
+          <a class="primary-cta" href="#waitlist">Join the waitlist</a>
+          <div class="hero-mini-icons" aria-label="STEL highlights">
+            <div><span>✧</span><p>whipped<br />to perfection</p></div>
+            <div><span>⌬</span><p>with<br />collagen</p></div>
+            <div><span>☺</span><p>made for<br />everyday</p></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="STEL product preview">
+          <div class="marble-card">
+            <div class="marble-texture"></div>
+            <div class="premium-can">
+              <div class="cap-line"></div>
+              <img src="assets/stel-logo-transparent.png" alt="STEL" />
+              <p>whipped<br />collagen cream</p>
+              <small>coming soon</small>
+            </div>
+            <div class="berries" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="cream-dollop" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-section" id="about" aria-labelledby="about-title">
+        <p class="section-kicker">Whipped cream, upgraded</p>
+        <h2 id="about-title">A lighter everyday indulgence.</h2>
+        <p>STEL is a low calorie whipped collagen cream made to top the rituals you already love. Think coffee, matcha, berries, yogurt bowls, desserts and late-night hot chocolate.</p>
+      </section>
+
+      <section class="benefits-section" id="ingredients" aria-label="Product benefits">
+        <div class="benefit-card">
+          <div class="benefit-icon">♧</div>
+          <h3>low calorie</h3>
+          <p>light & indulgent</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">□</div>
+          <h3>no added sugar</h3>
+          <p>naturally sweetened</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">⌬</div>
+          <h3>with collagen</h3>
+          <p>made for daily rituals</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">▯</div>
+          <h3>fridge staple</h3>
+          <p>always on hand</p>
+        </div>
+      </section>
+
+      <section class="use-section" id="faq" aria-labelledby="use-title">
+        <p class="section-kicker">How to use</p>
+        <h2 id="use-title">Made for your rituals.</h2>
+        <p class="use-intro">Spray it on anything that deserves a little upgrade.</p>
+        <div class="use-grid">
+          <article class="use-card matcha">
+            <div class="use-art" aria-hidden="true"></div>
+            <div class="use-text"><h3>matcha</h3><p>creamier matcha moments</p></div>
+          </article>
+          <article class="use-card fruit">
+            <div class="use-art" aria-hidden="true"></div>
+            <div class="use-text"><h3>fruit</h3><p>a whipped upgrade</p></div>
+          </article>
+          <article class="use-card yogurt">
+            <div class="use-art" aria-hidden="true"></div>
+            <div class="use-text"><h3>yogurt bowls</h3><p>more indulgence, more protein</p></div>
+          </article>
+          <article class="use-card hot-chocolate">
+            <div class="use-art" aria-hidden="true"></div>
+            <div class="use-text"><h3>hot chocolate</h3><p>the ultimate cozy ritual</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="waitlist-section" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="waitlist-panel">
+          <div>
+            <p class="section-kicker">Be first to try STEL</p>
+            <h2 id="waitlist-title">your new<br />fridge favorite</h2>
+          </div>
+          <div class="panel-divider" aria-hidden="true"></div>
+          <div>
+            <p>Join the waitlist for early access to the first drop.</p>
+            <form class="waitlist-form" name="stel-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+              <input type="hidden" name="form-name" value="stel-waitlist" />
+              <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+              <label class="sr-only" for="email">Email address</label>
+              <input id="email" type="email" name="email" placeholder="your email" required />
+              <button type="submit">Join the waitlist</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <img src="assets/stel-logo-transparent.png" alt="STEL" />
       <div class="social-links">
-        <a href="https://www.instagram.com/worldofstel" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@worldofstel" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.instagram.com/worldofstel" target="_blank" rel="noopener noreferrer">IG</a>
+        <a href="https://www.tiktok.com/@worldofstel" target="_blank" rel="noopener noreferrer">TikTok</a>
       </div>
-    </div>
-    <p class="footer-copy">STEL&nbsp;WHIP · collagen + glow · coming soon</p>
-  </footer>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
