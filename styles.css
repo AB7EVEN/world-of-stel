@@ -1,0 +1,309 @@
+/* Base styles */
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+  --color-dark: #38372f;
+  --color-accent: #5c574d;
+  --color-background: #f9f8f7;
+  --color-light: #faf8f5;
+  --color-highlight: #e7e3da;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  background-color: var(--color-background);
+}
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-secondary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e3da;
+}
+
+.nav-left .logo {
+  width: 80px;
+  height: auto;
+}
+
+.nav-links a {
+  margin-right: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-cta .btn {
+  padding: 0.5rem 1rem;
+  border-radius: 24px;
+  border: 1px solid var(--color-dark);
+  background-color: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-cta .btn:hover {
+  background-color: var(--color-dark);
+  color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem 4rem;
+  background-color: var(--color-light);
+}
+
+.hero-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.hero-tagline {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.hero-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 28px;
+  font-weight: 500;
+  border: none;
+  background-color: var(--color-dark);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--color-accent);
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-dark);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+}
+
+/* Benefits */
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--color-light);
+}
+
+.benefit-item {
+  flex: 1 1 200px;
+  max-width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-item h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.benefit-item p {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+}
+
+/* How to use */
+.how-to-use {
+  padding: 3rem 1rem;
+  background-color: var(--color-background);
+}
+
+.how-to-use h2 {
+  text-align: center;
+  font-family: var(--font-secondary);
+  margin-bottom: 2rem;
+}
+
+.use-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.use-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.use-image {
+  height: 140px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Placeholder backgrounds for demo; replace with actual images */
+.use-matcha {
+  background-color: #cfd8c9;
+}
+
+.use-fruit {
+  background-color: #f6d4ce;
+}
+
+.use-yogurt {
+  background-color: #dfe7f2;
+}
+
+.use-hot-chocolate {
+  background-color: #e8ddd3;
+}
+
+.use-item h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.use-item p {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+}
+
+/* Waitlist / Signup */
+.waitlist-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--color-light);
+}
+
+.waitlist-section h2 {
+  font-family: var(--font-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.waitlist-section p {
+  margin-bottom: 1.5rem;
+  color: var(--color-accent);
+}
+
+.waitlist-section form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.waitlist-section input[type="email"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  min-width: 260px;
+  font-size: 1rem;
+}
+
+.waitlist-section button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 28px;
+  border: none;
+  background-color: var(--color-dark);
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.waitlist-section button:hover {
+  background-color: var(--color-accent);
+}
+
+/* Footer */
+footer {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-top: 1px solid #e6e3da;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-nav a {
+  margin-right: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+}
+
+.footer-nav a:last-child {
+  margin-right: 0;
+}
+
+.social-links a {
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+}
+
+.footer-copy {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--color-accent);
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none; /* hide nav links on small screens for simplicity */
+  }
+  .nav-left .logo {
+    width: 60px;
+  }
+}
