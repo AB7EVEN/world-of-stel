@@ -3,19 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STEL | Waitlist Confirmed</title>
+  <title>STEL — You're on the list</title>
+  <meta name="description" content="Thank you for joining the STEL waitlist." />
+  <meta name="theme-color" content="#f7f1e7" />
+  <link rel="icon" href="assets/stel-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .success-wrap {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 80px var(--pad-x);
+      text-align: center;
+    }
+    .success-card {
+      max-width: 640px;
+      padding: clamp(40px, 6vw, 72px);
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(circle at 80% 10%, rgba(255,255,255,0.9), transparent 18rem),
+        linear-gradient(145deg, var(--cream-3), var(--linen));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-lg);
+    }
+    .success-card img { width: 120px; margin: 0 auto 26px; opacity: 0.95; }
+    .success-card h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(40px, 5vw, 64px);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+    .success-card h1 em { font-style: italic; color: var(--champagne); font-weight: 400; }
+    .success-card p {
+      font-family: var(--serif);
+      font-size: clamp(18px, 2vw, 22px);
+      color: var(--soft-ink);
+      margin-bottom: 32px;
+      line-height: 1.45;
+    }
+  </style>
 </head>
 <body>
-  <main class="waitlist-section" style="min-height:100vh;display:grid;place-items:center;">
-    <div class="waitlist-panel" style="max-width:780px;grid-template-columns:1fr;text-align:center;">
-      <img src="assets/stel-logo-transparent.png" alt="STEL" style="width:140px;margin:0 auto 20px;" />
-      <h1 style="font-family:'Cormorant Garamond', Georgia, serif;font-weight:400;font-size:60px;line-height:1;color:#22230f;">You’re on the list.</h1>
-      <p style="margin:18px auto 26px;max-width:520px;">Thank you for joining the STEL waitlist. We’ll share early access when the first drop is ready.</p>
-      <a class="primary-cta" href="/">Back to home</a>
+  <main class="success-wrap">
+    <div class="success-card">
+      <img src="assets/stel-logo.png" alt="STEL" />
+      <h1>You're <em>on the list.</em></h1>
+      <p>Thank you for joining the STEL waitlist. We'll share first access when the drop is ready.</p>
+      <a class="primary-button" href="/">Back to home <span aria-hidden="true">→</span></a>
     </div>
   </main>
 </body>
