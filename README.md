@@ -1,22 +1,37 @@
-# world-of-stel
+# World of STEL
 
-Landing page for STEL.
+Static Netlify landing page for **STEL** — a low-calorie whipped collagen cream made for coffee, matcha, fruit, yogurt bowls and desserts.
 
-## Netlify settings
+## Stack
 
-- Branch: `main`
-- Base directory: leave blank
-- Build command: leave blank
-- Publish directory: `.`
-- Functions directory: leave blank
+- Pure HTML / CSS / JS — no build step
+- Cormorant Garamond + Inter (Google Fonts)
+- Editorial palette (cream / linen / sand / champagne / ink)
+- Netlify-compatible waitlist form (`data-netlify="true"`)
 
 ## Files
 
-- `index.html` main landing page
-- `styles.css` site styles
-- `script.js` smooth scrolling
-- `success.html` waitlist confirmation page
-- `netlify.toml` Netlify config
-- `assets/stel-logo-transparent.png` transparent STEL logo
+- `index.html` — main landing page
+- `styles.css` — full editorial stylesheet
+- `script.js` — header behavior, scroll reveal, FAQ, smooth scroll
+- `success.html` — Netlify form success page
+- `assets/stel-logo.png` — brand mark
+- `assets/stel-hero.jpg` — hero product photo
+- `assets/use-coffee.jpg` / `use-matcha.jpg` / `use-yogurt.jpg` / `use-chocolate.jpg` — ritual images
 
-Netlify Forms is enabled through the `stel-waitlist` form in `index.html`.
+## Local preview
+
+Any static server works:
+
+```bash
+python3 -m http.server 8080
+# then open http://localhost:8080
+```
+
+## Netlify settings
+
+- Build command: _(leave blank)_
+- Publish directory: `.`
+- Branch: `main`
+
+The form `name="stel-waitlist"` will appear under **Forms** in the Netlify dashboard after the first submission.
