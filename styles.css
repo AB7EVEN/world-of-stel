@@ -107,10 +107,15 @@ button, input { font-family: inherit; }
 
 .brand-mark {
   justify-self: start;
-  width: 80px;
+  width: 92px;
   display: inline-block;
 }
-.brand-mark img { width: 100%; height: auto; }
+.brand-mark img {
+  width: 100%;
+  height: auto;
+  /* logo art is dark olive on transparent — keep it crisp on the cream header */
+  filter: drop-shadow(0 1px 0 rgba(255,250,243,0.6));
+}
 
 .nav-links {
   justify-self: center;
@@ -697,7 +702,7 @@ input[type="email"]::placeholder { color: var(--quiet-ink); }
   max-width: var(--max-w);
   margin: 0 auto 48px;
 }
-.footer-brand img { width: 96px; margin-bottom: 18px; opacity: 0.92; }
+.footer-brand img { width: 108px; margin-bottom: 18px; opacity: 0.92; }
 .footer-brand p {
   font-family: var(--serif);
   font-size: 17px;
