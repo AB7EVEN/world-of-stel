@@ -1,6 +1,6 @@
 # world-of-stel
 
-Static landing page for STEL.
+Landing page for STEL.
 
 ## Netlify settings
 
